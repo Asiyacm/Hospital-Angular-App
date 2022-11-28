@@ -9,6 +9,7 @@ import { PatientDeleteComponent } from './patient-delete/patient-delete.componen
 import { Route, RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PatientViewComponent } from './patient-view/patient-view.component';
+import { FormsModule } from '@angular/forms';
 
 
 const myRoute: Routes=
@@ -45,7 +46,8 @@ const myRoute: Routes=
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
